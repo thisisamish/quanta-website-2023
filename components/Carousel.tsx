@@ -35,6 +35,7 @@ export default function Carousel() {
           index != 1 ? (
             <Image
               unoptimized
+              key={index}
               width={14}
               height={14}
               alt=""
@@ -44,6 +45,7 @@ export default function Carousel() {
           ) : (
             <Image
               unoptimized
+              key={index}
               width={20}
               height={20}
               alt=""
