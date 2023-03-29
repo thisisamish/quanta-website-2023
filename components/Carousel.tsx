@@ -1,5 +1,6 @@
 import { BsArrowRight, BsArrowLeft } from "react-icons/bs";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function Carousel() {
   const images = [
@@ -32,13 +33,19 @@ export default function Carousel() {
       <div className="flex gap-4 items-center">
         {sliderImages.map((item, index) =>
           index != 1 ? (
-            <img
+            <Image
+              unoptimized
+              width={14}
+              height={14}
               alt=""
               src={item}
               className="w-56 h-56 object-cover rounded-xl blur-[2px]"
             />
           ) : (
-            <img
+            <Image
+              unoptimized
+              width={20}
+              height={20}
               alt=""
               src={item}
               className="w-72 h-72 object-cover rounded-xl"
