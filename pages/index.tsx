@@ -1,9 +1,9 @@
 import Head from "next/head";
 import Image from "next/image";
-import { Inter } from "next/font/google";
-import Carousel from "@/components/Carousel";
+import { Montserrat } from "next/font/google";
+import EventsCarousel from "@/layouts/EventsCarousel";
 
-const inter = Inter({ subsets: ["latin"] });
+const montserrat = Montserrat({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -17,8 +17,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        <Carousel />
+      <main className={montserrat.className}>
+        <EventsCarousel />
       </main>
     </>
   );
