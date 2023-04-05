@@ -22,14 +22,14 @@ export default function Home() {
       </Head>
       <main className={montserrat.className}>
         <div className="max-w-[1280px] mx-auto">
-          <div className="h-screen">
+          <div className="min-h-screen">
             <Navbar />
             <HeroCard />
           </div>
-          <div className="h-screen">
+          <div className="min-h-screen">
             <AboutUs />
           </div>
-          <div className="h-screen">
+          <div className="min-h-screen">
             <EventsCarousel />
           </div>
           <Footer />
