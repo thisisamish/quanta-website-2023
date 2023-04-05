@@ -4,6 +4,7 @@ import EventsCarousel from "@/layouts/EventsCarousel";
 import Navbar from "@/components/Navbar";
 import HeroCard from "@/components/HeroCard";
 import AboutUs from "@/layouts/AboutUs";
+import Footer from "@/components/Footer";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -31,6 +32,7 @@ export default function Home() {
           <div className="h-screen">
             <EventsCarousel />
           </div>
+          <Footer />
         </div>
       </main>
     </>
