@@ -2,6 +2,8 @@ import Head from "next/head";
 import { Montserrat } from "next/font/google";
 import EventsCarousel from "@/layouts/EventsCarousel";
 import Navbar from "@/components/Navbar";
+import HeroCard from "@/components/HeroCard";
+import AboutUs from "@/layouts/AboutUs";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -18,9 +20,17 @@ export default function Home() {
         <link rel="icon" href="/" />
       </Head>
       <main className={montserrat.className}>
-        <div className="max-w-[1440px] mx-auto">
-          <Navbar />
-          {/* <EventsCarousel /> */}
+        <div className="max-w-[1280px] mx-auto">
+          <div className="h-screen">
+            <Navbar />
+            <HeroCard />
+          </div>
+          <div className="h-screen">
+            <AboutUs />
+          </div>
+          <div className="h-screen">
+            <EventsCarousel />
+          </div>
         </div>
       </main>
     </>
