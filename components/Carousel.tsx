@@ -1,4 +1,6 @@
-import { BsArrowRight, BsArrowLeft } from "react-icons/bs";
+// TODO 1 : Remove react-icons lib
+// TODO 2 : Optimise images (remove unoptimised and deal with errors)
+// import { BsArrowRight, BsArrowLeft } from "react-icons/bs";
 import { useState } from "react";
 import Image from "next/image";
 
@@ -65,8 +67,36 @@ export default function Carousel() {
         </span>
       </p>
       <div className="absolute w-32 top-[575px] bottom-0 right-0 left-0 z-[100] m-auto grid grid-flow-col place-items-center">
-        <BsArrowLeft onClick={handleLeftClick} className="text-3xl" />
-        <BsArrowRight onClick={handleRightClick} className="text-3xl" />
+        <svg
+          width="20"
+          height="12"
+          viewBox="0 0 20 12"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1 6L6 11M1 6L6 1M1 6H19"
+            stroke="black"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <svg
+          width="20"
+          height="12"
+          viewBox="0 0 20 12"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M19 6L14 1M19 6L14 11M19 6H1"
+            stroke="black"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
       </div>
     </div>
   );

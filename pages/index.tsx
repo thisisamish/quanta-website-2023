@@ -1,7 +1,7 @@
 import Head from "next/head";
-import Image from "next/image";
 import { Montserrat } from "next/font/google";
 import EventsCarousel from "@/layouts/EventsCarousel";
+import Navbar from "@/components/Navbar";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -15,10 +15,13 @@ export default function Home() {
           content="Official website for Quanta - the official technical society of JSSATE, Noida"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/" />
       </Head>
       <main className={montserrat.className}>
-        <EventsCarousel />
+        <div className="max-w-[1440px] mx-auto">
+          <Navbar />
+          {/* <EventsCarousel /> */}
+        </div>
       </main>
     </>
   );
